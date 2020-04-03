@@ -1,0 +1,25 @@
+{
+  "name": "kvlt-telegram-bot",
+  "version": "0.0.0",
+  "description": "Kvlt telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobTheEvans/kvlt-bot.git"
+  },
+  "author": "Jacob 'The' Evans",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/JacobTheEvans/kvlt-bot/issues"
+  },
+  "homepage": "https://github.com/JacobTheEvans/kvlt-bot#readme",
+  "dependencies": {
+    "config": "^3.3.1",
+    "js-yaml": "^3.13.1",
+    "kvlt-konverter": "0.0.2",
+    "telegraf": "^3.37.0"
+  }
+}

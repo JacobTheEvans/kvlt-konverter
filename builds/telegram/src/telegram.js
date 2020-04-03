@@ -1,6 +1,6 @@
 const Telegraf = require('telegraf')
 const config = require('config')
-const { convertStringToKvlt } = require('./kvlt')
+const { convertStringToKvlt } = require('kvlt-konverter')
 
 async function main () {
   const bot = new Telegraf(

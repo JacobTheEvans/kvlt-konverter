@@ -1,5 +1,5 @@
 telegram:
-  token: DISCORD_TOKEN
+  token: TELEGRAM_TOKEN
 genres: GENRES
 features:
   convertGodToSatan: CONVERT_GOD_TO_SATAN
