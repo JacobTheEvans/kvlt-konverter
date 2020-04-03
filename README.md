@@ -34,7 +34,7 @@ This project currently works in the following platforms
 
 # Todo
 - [x] setup npm package for kvlt converter
-- [ ] finish docker images for kvlt bots
+- [x] finish docker images for kvlt bots
 - [ ] setup travis-ci to build telegram and discord docker images and push to
   dockerhub
 - [ ] convert project to use typescript
