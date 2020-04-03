@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const config = require('config')
-const { convertStringToKvlt } = require('./kvlt')
+const { convertStringToKvlt } = require('kvlt-konverter')
 
 function main () {
   const client = new Discord.Client()
