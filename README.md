@@ -33,12 +33,12 @@ This project currently works in the following platforms
 - discord
 
 # Todo
-- setup npm package for kvlt converter
-- finish docker images for kvlt bots
-- setup travis-ci to build telegram and discord docker images and push to
+- [x] setup npm package for kvlt converter
+- [ ] finish docker images for kvlt bots
+- [ ] setup travis-ci to build telegram and discord docker images and push to
   dockerhub
-- convert project to use typescript
-- write unit tests for kvlt package
-- write full docs with gif examples of code working
-- add other Pagefire words to spec
-- make doc website that has a converter built in and install instructions
+- [ ] convert project to use typescript
+- [ ] write unit tests for kvlt package
+- [ ] write full docs with gif examples of code working
+- [ ] add other Pagefire words to spec
+- [ ] make doc website that has a converter built in and install instructions
