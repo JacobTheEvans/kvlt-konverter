@@ -1,0 +1,9 @@
+discord:
+  token: DISCORD_TOKEN
+genres: GENRES
+features:
+  convertGodToSatan: CONVERT_GOD_TO_SATAN
+  convertUToV: CONVERT_U_TO_V
+  convertCToK: CONVERT_C_TO_K
+  convertOToÖ: CONVERT_O_TO_Ö
+  convertGenresToTrveNorwegianBlackMetal: CONVERT_GENRES_TO_TRVE_NORWEGIAN_BLACK_METAL

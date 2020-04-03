@@ -1,0 +1,9 @@
+telegram:
+  token: ''
+genres: country, rock, pop, hip hop
+features:
+  convertGodToSatan: 'true'
+  convertUToV: 'true'
+  convertCToK: 'true'
+  convertOToÖ: 'true'
+  convertGenresToTrveNorwegianBlackMetal: 'true'
