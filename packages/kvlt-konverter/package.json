@@ -1,6 +1,6 @@
 {
   "name": "kvlt-konverter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Package to convert normal text into the kvlt specification",
   "main": "index.js",
   "scripts": {
