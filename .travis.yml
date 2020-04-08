@@ -8,7 +8,7 @@ jobs:
   include:
     - stage: npm release
       node_js: '12.16.1'
-      script: echo 'Deploying to npm ...''
+      script: echo 'Deploying to npm ...'
       deploy:
         provider: npm
         api_key: $NPM_API_KEY
