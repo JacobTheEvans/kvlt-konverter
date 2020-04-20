@@ -1,4 +1,5 @@
-# Kvlt Bot
+# Kvlt Bot [![Build Status](https://travis-ci.org/JacobTheEvans/kvlt-bot.svg?branch=master)](https://travis-ci.org/JacobTheEvans/kvlt-bot)
+
 A Trve Bvlt bot that turns 'normal' 'boring' text into the köölest blackest
 metalest text! This bot repeats whatever your write translated into Trve Kvlt.
 If the constant repeated messages annoy you than you have to write the 'correct'
@@ -38,7 +39,7 @@ This project currently works in the following platforms
 - [ ] setup travis-ci to build telegram and discord docker images and push to
   dockerhub
 - [ ] convert project to use typescript
-- [ ] write unit tests for kvlt package
+- [x] write unit tests for kvlt package
 - [ ] write full docs with gif examples of code working
 - [ ] add other Pagefire words to spec
 - [ ] make doc website that has a converter built in and install instructions
