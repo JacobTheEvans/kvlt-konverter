@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prepare" : "npm run build",
+    "prepare": "npm run build",
     "build": "./node_modules/.bin/tsc",
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.ts",
     "dev": "./node_modules/.bin/tsc --watch"
