@@ -3,13 +3,9 @@ node_js:
   - "12.16.1"
 jobs:
   include:
-    - stage: install
-      node_js: "12.16.1"
-      before_script: cd packages/kvlt-konverter
-      script: "npm install"
     - stage: test
       node_js: "12.16.1"
-      before_script: cd packages/kvlt-konverter
+      before_script: cd packages/kvlt-konverter && npm install
       script: "npm test"
     - stage: release
       if: tag IS present
