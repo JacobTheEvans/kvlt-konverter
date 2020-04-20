@@ -3,11 +3,15 @@ node_js:
   - "12.16.1"
 jobs:
   include:
+    - stage: install
+      node_js: "12.16.1"
+      before_script: cd packages/kvlt-konverter
+      script: "npm install"
     - stage: test
       node_js: "12.16.1"
       before_script: cd packages/kvlt-konverter
       script: "npm test"
-    - stage: npm
+    - stage: release
       if: tag IS present
       node_js: "12.16.1"
       script: echo "Deploying to npm ..."
