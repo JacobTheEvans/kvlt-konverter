@@ -7,7 +7,7 @@
   "scripts": {
     "prepare" : "npm run build",
     "build": "./node_modules/.bin/tsc",
-    "test": "mocha -r ts-node/register test/**/*.ts",
+    "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.ts",
     "dev": "./node_modules/.bin/tsc --watch"
   },
   "repository": {
