@@ -2,7 +2,8 @@
   "name": "kvlt-konverter",
   "version": "0.0.4",
   "description": "Package to convert normal text into the kvlt specification",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prepare" : "npm run build",
     "build": "./node_modules/.bin/tsc",
