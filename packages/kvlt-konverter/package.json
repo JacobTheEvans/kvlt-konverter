@@ -1,10 +1,13 @@
 {
   "name": "kvlt-konverter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Package to convert normal text into the kvlt specification",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare" : "npm run build",
+    "build": "./node_modules/.bin/tsc",
+    "test": "mocha -r ts-node/register test/**/*.ts",
+    "dev": "./node_modules/.bin/tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/JacobTheEvans/kvlt-bot/issues"
   },
-  "homepage": "https://github.com/JacobTheEvans/kvlt-bot#readme"
+  "homepage": "https://github.com/JacobTheEvans/kvlt-bot#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  }
 }
