@@ -11,7 +11,7 @@ jobs:
       if: tag IS present
       node_js: "12.16.1"
       script: echo "Deploying to npm ..."
-      before_deploy: cd packages/kvlt-konverter
+      before_deploy: cd packages/kvlt-konverter && npm install
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
