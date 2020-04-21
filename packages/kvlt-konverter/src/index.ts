@@ -9,7 +9,7 @@ type ConvertStringToKvltOptions = {
   genres?: string[]
 }
 
-function convertStringToKvlt (
+export default function convertStringToKvlt (
   str: string,
   {
     convertGodToSatan = false,
@@ -41,5 +41,3 @@ function convertStringToKvlt (
   }
   return result
 }
-
-export default convertStringToKvlt

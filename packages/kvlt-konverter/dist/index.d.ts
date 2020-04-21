@@ -6,5 +6,5 @@ declare type ConvertStringToKvltOptions = {
     convertGenresToTrveNorwegianBlackMetal?: boolean;
     genres?: string[];
 };
-declare function convertStringToKvlt(str: string, { convertGodToSatan, convertUToV, convertCToK, convertOToÖ, convertGenresToTrveNorwegianBlackMetal, genres }?: ConvertStringToKvltOptions): string;
-export default convertStringToKvlt;
+export default function convertStringToKvlt(str: string, { convertGodToSatan, convertUToV, convertCToK, convertOToÖ, convertGenresToTrveNorwegianBlackMetal, genres }?: ConvertStringToKvltOptions): string;
+export {};
