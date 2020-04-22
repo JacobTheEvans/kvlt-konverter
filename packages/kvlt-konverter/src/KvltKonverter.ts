@@ -1,4 +1,4 @@
-class KvltKonverter {
+export class KvltKonverter {
   static godRegexPattern= /god/ig
   static lowerCaseURegexPattern = /u/g
   static upperCaseURegexPattern = /U/g
@@ -64,5 +64,3 @@ class KvltKonverter {
     return result
   }
 }
-
-export default KvltKonverter

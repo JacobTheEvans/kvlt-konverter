@@ -1,4 +1,4 @@
-import KvltKonverter from './KvltKonverter'
+import { KvltKonverter } from './KvltKonverter'
 
 type ConvertStringToKvltOptions = {
   convertGodToSatan?: boolean
@@ -9,7 +9,7 @@ type ConvertStringToKvltOptions = {
   genres?: string[]
 }
 
-export default function convertStringToKvlt (
+export function convertStringToKvlt (
   str: string,
   {
     convertGodToSatan = false,

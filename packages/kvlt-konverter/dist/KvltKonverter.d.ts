@@ -1,4 +1,4 @@
-declare class KvltKonverter {
+export declare class KvltKonverter {
     static godRegexPattern: RegExp;
     static lowerCaseURegexPattern: RegExp;
     static upperCaseURegexPattern: RegExp;
@@ -12,4 +12,3 @@ declare class KvltKonverter {
     static convertOToÖ(str: string): string;
     static convertGenresToTrveNorwegianBlackMetal(str: string, genres?: string[]): string;
 }
-export default KvltKonverter;

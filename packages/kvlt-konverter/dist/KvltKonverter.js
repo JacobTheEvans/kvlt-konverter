@@ -27,6 +27,7 @@ class KvltKonverter {
         return result;
     }
 }
+exports.KvltKonverter = KvltKonverter;
 KvltKonverter.godRegexPattern = /god/ig;
 KvltKonverter.lowerCaseURegexPattern = /u/g;
 KvltKonverter.upperCaseURegexPattern = /U/g;
@@ -34,4 +35,3 @@ KvltKonverter.lowerCaseCRegexPattern = /c/g;
 KvltKonverter.upperCaseCRegexPattern = /C/g;
 KvltKonverter.lowerCaseORegexPattern = /o/g;
 KvltKonverter.upperCaseORegexPattern = /O/g;
-exports.default = KvltKonverter;
