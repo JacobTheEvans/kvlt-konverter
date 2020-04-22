@@ -1,4 +1,4 @@
-import convertStringToKvlt from '../src'
+import { convertStringToKvlt } from '../src'
 import { assert } from 'chai'
 import 'mocha'
 
