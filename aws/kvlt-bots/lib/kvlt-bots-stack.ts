@@ -3,12 +3,21 @@ import * as ec2 from '@aws-cdk/aws-ec2'
 import * as ecs from '@aws-cdk/aws-ecs'
 import * as ssm from '@aws-cdk/aws-ssm'
 
+const RELEASE = process.env.RELEASE || 'latest'
+
 export class KvltBotsStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props)
 
     const vpc = new ec2.Vpc(this, 'KvltBotVpcs', {
-      maxAzs: 3
+      cidr: '10.0.0.0/16',
+      maxAzs: 2,
+      subnetConfiguration: [{
+          cidrMask: 26,
+          name: 'isolatedSubnet',
+          subnetType: ec2.SubnetType.PUBLIC
+      }],
+      natGateways: 0
     })
 
     const kvltBotsCluster = new ecs.Cluster(this, 'KvltBotCluster', {
@@ -39,7 +48,7 @@ export class KvltBotsStack extends cdk.Stack {
       'DiscordKvltBot',
       {
         image: ecs.ContainerImage.fromRegistry(
-          'jacobtheevans/kvlt-discord-bot:latest'
+          `jacobtheevans/kvlt-discord-bot:${RELEASE}`
         ),
         memoryLimitMiB: 512,
         cpu: 256,
@@ -52,7 +61,7 @@ export class KvltBotsStack extends cdk.Stack {
       'TelegramKvltBot',
       {
         image: ecs.ContainerImage.fromRegistry(
-          'jacobtheevans/kvlt-telegram-bot:latest'
+          `jacobtheevans/kvlt-telegram-bot:${RELEASE}`
         ),
         memoryLimitMiB: 512,
         cpu: 256,
@@ -65,7 +74,8 @@ export class KvltBotsStack extends cdk.Stack {
     new ecs.FargateService(this, 'Service', {
       cluster: kvltBotsCluster,
       taskDefinition: discordKvltBotFargateTaskDefinition,
-      desiredCount: 1
+      desiredCount: 1,
+      assignPublicIp: true
     });
   }
 }
