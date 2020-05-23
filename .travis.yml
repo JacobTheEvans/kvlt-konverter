@@ -9,12 +9,9 @@ jobs:
       script: "npm test"
     - stage: release kvlt-konverter npm package
       node_js: "12.16.1"
-      script: echo "Deploying to npm ..."
-      script: cd packages/kvlt-konverter && npm install
+      before_script: cd packages/kvlt-konverter && npm install
       script: cd packages/kvlt-konverter && ./release.sh "$NPM_EMAIL" "$NPM_TOKEN"
     - stage: release kvlt-discord-bot docker image
-      script: echo "Deploying kvlt-discord-bot to dockerhub ..."
       script: cd packages/kvlt-discord-bot && ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
     - stage: release kvlt-telegram-bot docker image
-      script: echo "Deploying kvlt-telegram-bot to dockerhub ..."
       script: cd packages/kvlt-telegram-bot && ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
