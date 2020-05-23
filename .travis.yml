@@ -3,19 +3,20 @@ node_js:
   - "12.16.1"
 jobs:
   include:
-    - stage: test
+    - stage: test kvlt-konverter npm package
       node_js: "12.16.1"
       before_script: cd packages/kvlt-konverter && npm install
       script: "npm test"
-    - stage: release
-      if: tag IS present
+    - stage: release kvlt-konverter npm package
       node_js: "12.16.1"
       script: echo "Deploying to npm ..."
       before_deploy: cd packages/kvlt-konverter && npm install
-      deploy:
-        provider: npm
-        email: "$NPM_EMAIL"
-        api_key: "$NPM_TOKEN"
-        skip_cleanup: true
-        on:
-          tags: true
+      script: ./release.sh "$NPM_EMAIL" "$NPM_TOKEN"
+    - stage: release kvlt-discord-bot docker image
+      script: echo "Deploying to dockerhub ..."
+      before_deploy: cd packages/kvlt-discord-bot
+      script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
+    - stage: release kvlt-telegram-bot docker image
+      script: echo "Deploying to dockerhub ..."
+      before_deploy: cd packages/kvlt-telegram-bot
+      script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
