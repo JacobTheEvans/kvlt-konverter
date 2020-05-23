@@ -10,8 +10,10 @@ jobs:
     - stage: release kvlt-konverter npm package
       node_js: "12.16.1"
       before_script: cd packages/kvlt-konverter && npm install
-      script: cd packages/kvlt-konverter && ./release.sh "$NPM_EMAIL" "$NPM_TOKEN"
+      script: ./release.sh "$NPM_EMAIL" "$NPM_TOKEN"
     - stage: release kvlt-discord-bot docker image
-      script: cd packages/kvlt-discord-bot && ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
+      before_script: cd packages/kvlt-discord-bot
+      script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
     - stage: release kvlt-telegram-bot docker image
-      script: cd packages/kvlt-telegram-bot && ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
+      before_script: cd packages/kvlt-telegram-bot
+      script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
