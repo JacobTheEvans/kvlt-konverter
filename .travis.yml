@@ -10,7 +10,7 @@ jobs:
     - stage: release kvlt-konverter npm package
       node_js: "12.16.1"
       script: echo "Deploying to npm ..."
-      before_deploy: cd packages/kvlt-konverter && npm install
+      script: cd packages/kvlt-konverter && npm install
       script: cd packages/kvlt-konverter && ./release.sh "$NPM_EMAIL" "$NPM_TOKEN"
     - stage: release kvlt-discord-bot docker image
       script: echo "Deploying kvlt-discord-bot to dockerhub ..."
