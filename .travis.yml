@@ -19,4 +19,4 @@ jobs:
       script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
     - stage: deploy to aws
       before_script: cd aws/kvlt-bots && ./install.sh
-      script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD" "$REGION"
+      script: ./release.sh "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY" "$REGION"
