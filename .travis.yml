@@ -17,3 +17,6 @@ jobs:
     - stage: release kvlt-telegram-bot docker image
       before_script: cd packages/kvlt-telegram-bot
       script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
+    - stage: deploy to aws
+      before_script: cd aws/kvlt-bots && ./install.sh
+      script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
