@@ -1,5 +1,5 @@
 export class KvltKonverter {
-  static godRegexPattern= /god/ig
+  static godRegexPattern = /god/ig
   static lowerCaseURegexPattern = /u/g
   static upperCaseURegexPattern = /U/g
   static lowerCaseCRegexPattern = /c/g

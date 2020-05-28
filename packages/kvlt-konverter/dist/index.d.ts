@@ -1,4 +1,4 @@
-declare type ConvertStringToKvltOptions = {
+export declare type ConvertStringToKvltOptions = {
     convertGodToSatan?: boolean;
     convertUToV?: boolean;
     convertCToK?: boolean;
@@ -7,4 +7,3 @@ declare type ConvertStringToKvltOptions = {
     genres?: string[];
 };
 export declare function convertStringToKvlt(str: string, { convertGodToSatan, convertUToV, convertCToK, convertOToÖ, convertGenresToTrveNorwegianBlackMetal, genres }?: ConvertStringToKvltOptions): string;
-export {};

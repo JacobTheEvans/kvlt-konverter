@@ -1,6 +1,6 @@
 import { KvltKonverter } from './KvltKonverter'
 
-type ConvertStringToKvltOptions = {
+export type ConvertStringToKvltOptions = {
   convertGodToSatan?: boolean
   convertUToV?: boolean
   convertCToK?: boolean
