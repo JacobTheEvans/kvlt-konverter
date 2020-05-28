@@ -18,5 +18,5 @@ jobs:
       before_script: cd packages/kvlt-telegram-bot
       script: ./release.sh "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
     - stage: deploy to aws
-      before_script: cd aws/kvlt-bots && ./install.sh
-      script: ./release.sh "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY" "$REGION"
+      before_script: cd aws/kvlt-bots && ./install.sh "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY" "$REGION"
+      script: ./release.sh
