@@ -9,6 +9,15 @@ export type ConvertStringToKvltOptions = {
   genres?: string[]
 }
 
+export enum ConvertStringToKvltOptionsKeys {
+  convertGodToSatan = 'convertGodToSatan',
+  convertUToV = 'convertUToV',
+  convertCToK = 'convertCToK',
+  convertOToÖ = 'convertOToÖ',
+  convertGenresToTrveNorwegianBlackMetal = 'convertGenresToTrveNorwegianBlackMetal',
+  genres = 'genres'
+}
+
 export function convertStringToKvlt (
   str: string,
   {
