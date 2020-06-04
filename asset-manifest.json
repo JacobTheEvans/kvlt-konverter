@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/kvlt-konverter/static/js/main.1a156ba9.chunk.js",
+    "main.js.map": "/kvlt-konverter/static/js/main.1a156ba9.chunk.js.map",
+    "runtime-main.js": "/kvlt-konverter/static/js/runtime-main.dfba9f15.js",
+    "runtime-main.js.map": "/kvlt-konverter/static/js/runtime-main.dfba9f15.js.map",
+    "static/js/2.7f7ee506.chunk.js": "/kvlt-konverter/static/js/2.7f7ee506.chunk.js",
+    "static/js/2.7f7ee506.chunk.js.map": "/kvlt-konverter/static/js/2.7f7ee506.chunk.js.map",
+    "index.html": "/kvlt-konverter/index.html",
+    "precache-manifest.e5ea5528f538447d1dd923cc97b426be.js": "/kvlt-konverter/precache-manifest.e5ea5528f538447d1dd923cc97b426be.js",
+    "service-worker.js": "/kvlt-konverter/service-worker.js",
+    "static/js/2.7f7ee506.chunk.js.LICENSE.txt": "/kvlt-konverter/static/js/2.7f7ee506.chunk.js.LICENSE.txt",
+    "static/media/discord-example.png": "/kvlt-konverter/static/media/discord-example.25c3e56e.png",
+    "static/media/kvlt-ci-cd.png": "/kvlt-konverter/static/media/kvlt-ci-cd.0aa3b751.png",
+    "static/media/telegram-example.png": "/kvlt-konverter/static/media/telegram-example.c8cc2f63.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfba9f15.js",
+    "static/js/2.7f7ee506.chunk.js",
+    "static/js/main.1a156ba9.chunk.js"
+  ]
+}
